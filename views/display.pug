@@ -1,0 +1,24 @@
+
+
+html 
+    head 
+        style
+            include ../public/dict.css
+        
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    body 
+        //- form(action="")
+    
+        p #{data}
+        
+        - for(let i = 0; i< data.length; i++){
+                            
+            p= data[i].definition
+            hr
+        -}
+        
+       
+    
+     
+        script 
+            include ../public/dict.js

@@ -1,0 +1,23 @@
+html 
+    head 
+        style
+            include ../public/dict.css
+        
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+
+    body
+        #head-container 
+            h1#header My dictionary
+            
+
+        #top-cont 
+            label Word 
+            input(type="text" name="word" id="word") 
+            input(type="button" value="search" id="search") 
+        
+        #display 
+            ul#def 
+    
+     
+        script 
+            include ../public/dict.js
